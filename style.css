@@ -1,0 +1,147 @@
+/* BASE */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* TITRES */
+h1 {
+    text-align: center;
+    margin: 30px 10px;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+h2, h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* CONTENUS DES SECTIONS */
+header > div {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* LIENS */
+a {
+    color: #0b36a5;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* LISTES */
+ul li {
+    margin-bottom: 10px;
+}
+
+/* ESPACE */
+br {
+    line-height: 1.5;
+}
+
+/* Styles pour les légendes */
+figcaption {
+    font-size: 1em; /* Taille de la légende par défaut */
+    color: #555; /* Gris clair */
+    margin-top: 8px; /* Espacement entre l'image et la légende */
+    max-width: 100%; /* Pour éviter que le texte dépasse de l'image */
+    word-wrap: break-word; /* Pour que le texte se coupe et ne déborde pas */
+    text-align: center; /* Centrer le texte de la légende */
+}
+
+
+/* 🎯 PARTIE RESPONSIVE */
+@media screen and (max-width: 768px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    header > div {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        padding: 0 20px;
+    }
+
+    /* Styles pour les légendes  */
+    figcaption {
+        font-size: 0.9em; /* Réduit légèrement la taille de la légende sur tablettes */
+        margin-top: 6px; /* Moins d'espace entre l'image et la légende */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2, h3 {
+        font-size: 1.3em;
+    }
+
+    /* Styles pour les légendes sur les petits écrans  */
+    figcaption {
+        font-size: 0.8em; /* Taille encore plus petite pour les petits écrans  */
+        margin-top: 4px; /* Réduit l'espace entre l'image et la légende */
+    }
+}
