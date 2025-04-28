@@ -6,7 +6,9 @@
 /* BASE */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background-color: rgba(240, 242, 245);
+    background-size: auto;
+    background-position: center;    
     color: #333;
     margin: 0;
     padding: 0;
@@ -15,7 +17,8 @@ body {
 /* TITRES */
 h1 {
     text-align: center;
-    margin: 30px 10px;
+    background-color: rgba(255, 255, 255);
+    margin: 0 0px;
     font-size: 2.5em;
     color: #2c3e50;
 }
@@ -65,19 +68,100 @@ header > div {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
 }
 
-header > #credit {
-    background-color: rgb(44, 62, 80);
-    margin: 30px auto;
-    padding: 20px;
+#credit {
+    background-color: rgba(44, 62, 80);
+    margin: 30px 0 auto;
+    padding: 20px 10px ;
     color: whitesmoke;
-    max-height: 101px;
+    max-height: 100px;
     max-width: 100%;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
     font-family: MarkaziText;
-    font-size: large;
+    font-size: 1.4rem;
     text-align: center;
     text-decoration: underline;
+    text-shadow: 0 0 25px #000000;
 }
+
+#creation-projet {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(100, 120, 140, 0.5);
+    max-width: 100%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+
+}
+
+#C-P {
+    display:grid;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#C-P:hover {
+    background-color: #34495e;
+    transform: translateY(-3px);
+}
+
+.PP2 {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1700px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+    font-size: 0.9rem;
+    h2 {
+        text-align: center;
+    }
+}
+
+.PP2 {
+    display: flex;
+    justify-content: flex-start; /* Aligner à gauche pour le texte */
+    align-items: flex-start;
+    gap: 20px; /* Espacement entre le texte et les images */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.PP3 {
+    width: 60%; /* Zone de texte ajustable */
+}
+
+.PP3 p {
+    font-size: 16px; /* Taille du texte */
+    line-height: 1.5;
+    color: #333;
+}
+
+.IMAGES {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les images à droite */
+    gap: 15px; /* Espacement entre les images */
+    max-width: 120px; /* Limite la largeur des images */
+}
+
+.IMAGES img {
+    width: 100%; /* Les images occuperont toute la largeur du conteneur */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+  
 
 img {
     display: block;
