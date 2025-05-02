@@ -161,7 +161,14 @@ header > div {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
 }
 
-  
+.divSY {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1400px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+}
 
 img {
     display: block;
@@ -169,6 +176,22 @@ img {
     border-radius: 8px;
     max-width: 100%;
     height: auto;
+}
+
+.divTMINC3 img {
+    display: inline-flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto 20px;
+}
+
+.divTMINC3 {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1400px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
 }
 
 /* LIENS */
@@ -199,6 +222,7 @@ figcaption {
     word-wrap: break-word; /* Pour que le texte se coupe et ne déborde pas */
     text-align: center; /* Centrer le texte de la légende */
 }
+
 
 
 /* 🎯 PARTIE RESPONSIVE */
